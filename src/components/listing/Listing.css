@@ -1,0 +1,98 @@
+.manage-btn {
+  width: 6rem;
+  width: 20%;
+  height: 2rem;
+  background: white;
+  border: 1px solid orange;
+  color: orange;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  position: relative;
+  align-self: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .manage-btn {
+    width: 30%;
+  }
+}
+
+.orange-btn {
+  color: white;
+  background: orange;
+}
+
+.manage-btn:focus {
+  outline: none;
+}
+
+.floating-box {
+  position: absolute;
+  top: -152px;
+  left: -122px;
+  border: 1px solid orange;
+  margin: 0px;
+  height: 150px;
+  background: white;
+  width: 200px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0;
+  color: orange;
+}
+
+.floating-box li {
+  display: flex;
+  align-items: center;
+}
+
+.floating-box li svg {
+  font-size: 1rem;
+  margin-right: 4px;
+  margin-left: 15px;
+}
+
+.listing-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.listing-sec::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 200%;
+  height: 1px;
+  background: #d0d0d0;
+}
+
+.listing-status {
+  display: flex;
+  width: 78%;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+.listing-status span {
+  color: #929292cc;
+  font-size: 10px;
+}
+
+.listing-status p:nth-child(1) {
+  width: 40%;
+}
+
+.listing-status p:nth-child(2) {
+  width: 52%;
+  border-left: 1.3px solid #c1b5b5;
+  padding-left: 7px;
+}
