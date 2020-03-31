@@ -67,7 +67,7 @@ const Listing = props => {
         {showSmallPopup && (
           <ul onClick={e => e.stopPropagation()} className="floating-box">
             <li onClick={handleEditMessage}>
-              <EditIcon /> Eidt Message
+              <EditIcon /> Edit Message
             </li>
             <li onClick={handleEditReview}>
               <EditIcon /> Edit Review
